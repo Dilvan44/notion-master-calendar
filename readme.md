@@ -1,6 +1,6 @@
 # Notion Master Calendar
 
-notion-master-calendar is a small application for merging Notion database pages (items) and keeping them in (one-way) sync. 
+notion-master-calendar is a small application for merging Notion database pages (items) and keeping them in (one-way) sync in an overview for all your deadlines and appointments. 
 
 ## Installation
 
