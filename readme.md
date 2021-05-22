@@ -9,7 +9,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install notion-
 ```bash
 pip install -r requirements.txt
 ```
-Create a .env file and save your credentials (api token) and Notion database ids there. Save the ids of the databases you want to merge (and keep in sync) in the list called basecals. Obviously you should save the id of the database you want to synchronize the data from the basecals in mastercal.
+Create a .env file and save your credentials (api token) and Notion database ids there. Save the ids of the databases you want to merge (and keep in sync) in the list called basecals. Obviously you should save the id of the database you want to synchronize the data from the basecals to in mastercal.
 
 ## Notion Preparation
 
