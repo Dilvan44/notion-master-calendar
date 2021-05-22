@@ -2,16 +2,17 @@ from decouple import config
 import requests
 import json
 
+# ENV Variables and Credentials
 apitoken = config('NOTIONAPITOKEN')
-baseCalId1=config('BASECALENDAR1')
+baseCalId1=config('BASECALENDAR1') 
 baseCalId2=config('BASECALENDAR2')
 MasterCalId=config('MASTERCALENDAR')
 requestheader = {
     'Authorization':f'Bearer {apitoken}',
     'Notion-Version':'2021-05-13'
     } 
-basecals = [baseCalId1,baseCalId2]
-mastercal = MasterCalId
+basecals = [baseCalId1,baseCalId2] #The ids of the databases you want to merge. It is possible to synchronize more than just two.
+mastercal = MasterCalId #The id of the target database you want to merge the data to. 
 
 def getCalendardata(calendarid):
     #Request to API to retrieve DB, return a list with New Pages & Pages which are already in the synced Database/Calendar
